@@ -1,0 +1,23 @@
+Algorithme CalculPGCD_PPCMM  
+Var:  
+  a, b, g, PGCD, PPCM : Entier  
+
+Début  
+  Afficher "Entrez le premier nombre : "  
+  Lire a  
+
+  Afficher "Entrez le second nombre : "  
+  Lire b  
+
+  Tant que B ≠ 0 Faire  
+    g = a % b  
+    a = b  
+    b = g  
+  Fin Tant que  
+  PGCD = a  
+
+  PPCM = (a * b) / PGCD  
+
+  Afficher "Le PGCD est : ", PGCD  
+  Afficher "Le PPCM est : ", PPCM  
+Fin
