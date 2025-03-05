@@ -1,0 +1,22 @@
+Algorithme JeuDeDevinerNombre  
+Var :  
+  NS, NU, T : Entier  
+
+Début  
+  Générer NS entre 1 et 100  
+  T ← 0  
+
+  Répéter  
+    Afficher "Devinez le nombre (entre 1 et 100) : "  
+    Lire NU  
+    T ← T + 1  
+
+    Si NU > NS Alors  
+      Afficher "Trop grand !"  
+    Sinon Si NU < NS Alors  
+      Afficher "Trop petit !"  
+    Fin Si  
+  Jusqu'à NU = NS  
+
+  Afficher "Bravo ! Vous avez trouvé en ", T, " tentatives."  
+Fin  
