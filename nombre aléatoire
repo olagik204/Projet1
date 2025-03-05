@@ -1,0 +1,17 @@
+Algorithme TrierNombresAleatoires  
+Var : 
+  ListeNbrs : Tableau[1..50] Entier  
+  n, i : Entier  
+
+Début  
+  Pour i = 1 à 50 Faire  
+    n = NombreAléatoire(1, 100)  
+    ListeNbrs[i] = n 
+  Fin Pour  
+
+  Trier(ListeNbrs)  
+
+  Pour i = 1 à 50 Faire  
+    Afficher ListeNbrs[i]  
+  Fin Pour  
+Fin
