@@ -1,0 +1,23 @@
+Algorithme VerifierPalindrome  
+Variables :  
+  N, I, Reste, Temp : Entier  
+
+Début  
+  Afficher "Entrez un nombre : "  
+  Lire N  
+
+  Temp = N  
+  I = 0  
+
+  Tant que Temp > 0 Faire  
+    Reste = Temp % 10  
+    I = I * 10 + Reste  
+    Temp = Temp / 10  
+  Fin Tant que  
+
+  Si N = I Alors  
+    Afficher "Le nombre est un palindrome."  
+  Sinon  
+    Afficher "Le nombre n'est pas un palindrome."  
+  Fin Si  
+Fin
