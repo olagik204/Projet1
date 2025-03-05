@@ -1,0 +1,36 @@
+Algorithme File_Attente_Banque  
+Var :  
+  File : File de clients  
+  Client, Choix : Entier  
+
+Début  
+  Initialiser File vide  
+
+  Répéter  
+    Afficher "Que voulez-vous faire ?"  
+    Afficher "1. Ajouter un client à la file"  
+    Afficher "2. Servir un client"  
+    Afficher "3. Afficher la file"  
+    Afficher "4. Quitter"  
+    Lire Choix  
+
+    Si Choix = 1 Alors  
+      Afficher "Entrez l'identifiant du client à ajouter : "  
+      Lire Client  
+      Enfiler(File, Client)  
+      Afficher "Client ajouté à la file."  
+    Sinon Si Choix = 2 Alors  
+      Si File est vide(File) Alors  
+        Afficher "La file est vide."  
+      Sinon  
+        Client = Depiler(File)  
+        Afficher "Client ", Client, " a été servi."  
+      Fin Si  
+    Sinon Si Choix = 3 Alors  
+      Afficher "Clients dans la file : "  
+      Afficher File  
+    Fin Si  
+  Jusqu'à Choix = 4  
+
+  Afficher "Fin du programme."  
+Fin
